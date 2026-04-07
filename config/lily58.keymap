@@ -11,12 +11,12 @@
 
 /*
  * Pin remap for broken controller pin.
- * Right half: row 0 (6, 7, 8, 9, 0, `) moved from pin 5 to pin 4
+ * Right half: row 0 (6, 7, 8, 9, 0, `) moved from pin 5 to pin 1
  */
 #ifdef CONFIG_SHIELD_LILY58_RIGHT
 &kscan0 {
     row-gpios
-        = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
